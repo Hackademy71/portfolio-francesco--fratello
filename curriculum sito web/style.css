@@ -1,0 +1,245 @@
+body{
+    background-image: url('https://www.matthiasboehm.com/wp-content/themes/webdesign-page/assets/images/background-new3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.box{
+    display: flex;
+}
+.contenitore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    color: aliceblue;
+}
+.box2{
+  display: flex;
+    background-color: #21b2a6; 
+    
+}
+
+.testo{
+    color: white;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color:transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prov{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.testo p{padding: 15px;
+    margin-left: 30px;
+}
+
+.boxSlider{
+    background: rgb(166, 166, 166) ;
+     display: flex;
+      flex-direction: column;
+       align-items: center;
+    }
+.boxSlider img{
+    width: 100%; 
+    height: auto;
+}
+.boxSlider h1{
+    color: #21b2a6; 
+    font-size: 25px;
+}
+span:hover{
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.freccia{
+    width:0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 2opx solid #000;
+    position: relative;
+    animation-name: moveDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moveDown{
+    from{
+        top:0;
+    }
+    to{
+        top: 100px;
+    }
+}
+.centro h1{
+    display: flex;
+    justify-content: center;
+    
+}
+.but{
+    height: 200px;
+}
+.but h3{
+    color:white;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5));
+    height: 300px;
+}
+.footer h1{
+    color: white;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+@media(min-width:768px){ /*Visual. tablet e desktop*/
+.contenitore{
+    height: 800px;
+}
+.contenitore h2{
+    font-size: 50px;
+}
+.contenitore span{
+    text-transform: uppercase;
+    font-size: 30px;
+}   
+#test div:nth-child(even) img{
+    order: 2;
+} 
+.boxSlider{
+    flex-direction: unset;
+     margin:25px 0;
+    }
+.boxSlider img{width: 30%;
+     height: auto;
+    }
+.boxSlider div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.footer h1{
+    color: white;
+}
+.footer2{
+    margin-top: 20px;
+}
+.testo h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.testo p{
+    text-transform: uppercase;
+    
+}
+.prov{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.but{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+button{
+    height: 40px;
+    color:darkslateblue;
+}
+.but h3{
+    color: white;
+    text-transform: uppercase;
+}
+.freccia img{
+    color:white;
+}
+.freccia{
+    width:0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 2opx solid #000;
+    position: relative;
+    animation-name: moveDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.centro h1{
+    color: white;
+}
+.footer img{
+    cursor: pointer;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+}
+@keyframes moveDown{
+    from{
+        top:0;
+    }
+    to{
+        top: 100px;
+    }
+}
+@media(min-width:1024px){/*Visual. desktop */}
